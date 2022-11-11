@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79DA4947291E883700A43627 /* Dice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DA4946291E883700A43627 /* Dice.swift */; };
+		79DA4949291E916800A43627 /* DiceVC_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DA4948291E916800A43627 /* DiceVC_Ext.swift */; };
 		ADAD913C22B0FDAE007B460A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = ADAD913B22B0FDAE007B460A /* README.md */; };
 		ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0DFFC22AFA6090030352D /* AppDelegate.swift */; };
-		ADB0E00122AFA6090030352D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0E00022AFA6090030352D /* ViewController.swift */; };
-		ADB0E00422AFA6090030352D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB0E00222AFA6090030352D /* Main.storyboard */; };
+		ADB0E00122AFA6090030352D /* DiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADB0E00022AFA6090030352D /* DiceVC.swift */; };
 		ADB0E00622AFA60E0030352D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADB0E00522AFA60E0030352D /* Assets.xcassets */; };
 		ADB0E00922AFA60E0030352D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */; };
 		ADE1FB1422B39F0200DD2BD6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79DA4946291E883700A43627 /* Dice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dice.swift; sourceTree = "<group>"; };
+		79DA4948291E916800A43627 /* DiceVC_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceVC_Ext.swift; sourceTree = "<group>"; };
 		ADAD913B22B0FDAE007B460A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		ADB0DFF922AFA6090030352D /* Dicee-iOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicee-iOS13.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADB0DFFC22AFA6090030352D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADB0E00022AFA6090030352D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		ADB0E00322AFA6090030352D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADB0E00022AFA6090030352D /* DiceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceVC.swift; sourceTree = "<group>"; };
 		ADB0E00522AFA60E0030352D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADB0E00822AFA60E0030352D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADB0E00A22AFA60E0030352D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,10 +61,11 @@
 		ADB0DFFB22AFA6090030352D /* Dicee-iOS13 */ = {
 			isa = PBXGroup;
 			children = (
+				79DA4946291E883700A43627 /* Dice.swift */,
+				79DA4948291E916800A43627 /* DiceVC_Ext.swift */,
 				ADB0DFFC22AFA6090030352D /* AppDelegate.swift */,
 				ADE1FB1322B39F0200DD2BD6 /* SceneDelegate.swift */,
-				ADB0E00022AFA6090030352D /* ViewController.swift */,
-				ADB0E00222AFA6090030352D /* Main.storyboard */,
+				ADB0E00022AFA6090030352D /* DiceVC.swift */,
 				ADB0E00522AFA60E0030352D /* Assets.xcassets */,
 				ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */,
 				ADB0E00A22AFA60E0030352D /* Info.plist */,
@@ -97,7 +100,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1100;
+				LastUpgradeCheck = 1410;
 				ORGANIZATIONNAME = "London App Brewery";
 				TargetAttributes = {
 					ADB0DFF822AFA6090030352D = {
@@ -131,7 +134,6 @@
 				ADB0E00922AFA60E0030352D /* LaunchScreen.storyboard in Resources */,
 				ADB0E00622AFA60E0030352D /* Assets.xcassets in Resources */,
 				ADAD913C22B0FDAE007B460A /* README.md in Resources */,
-				ADB0E00422AFA6090030352D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADB0E00122AFA6090030352D /* ViewController.swift in Sources */,
+				ADB0E00122AFA6090030352D /* DiceVC.swift in Sources */,
 				ADB0DFFD22AFA6090030352D /* AppDelegate.swift in Sources */,
+				79DA4947291E883700A43627 /* Dice.swift in Sources */,
+				79DA4949291E916800A43627 /* DiceVC_Ext.swift in Sources */,
 				ADE1FB1422B39F0200DD2BD6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -151,14 +155,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		ADB0E00222AFA6090030352D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADB0E00322AFA6090030352D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		ADB0E00722AFA60E0030352D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -196,6 +192,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -256,6 +253,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -289,12 +287,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24928479RW;
 				INFOPLIST_FILE = "Dicee-iOS13/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DiceApp;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.Dicee-iOS13";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dustik.dice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -306,12 +306,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 24928479RW;
 				INFOPLIST_FILE = "Dicee-iOS13/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = DiceApp;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.Dicee-iOS13";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dustik.dice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
